@@ -1,0 +1,35 @@
+{
+    "name": "Smart Property AI",
+    "model": "Random Forest",
+    "algorithm": "RandomForestRegressor",
+    "metrics": {
+        "r2_score": 0.8252,
+        "mae": 31635.33,
+        "rmse": 47760.53
+    },
+    "dataset": {
+        "samples": 16346,
+        "features": [
+            "longitude",
+            "latitude",
+            "housing_median_age",
+            "total_rooms",
+            "total_bedrooms",
+            "population",
+            "households",
+            "median_income",
+            "<1H OCEAN",
+            "INLAND",
+            "ISLAND",
+            "NEAR BAY",
+            "NEAR OCEAN",
+            "bedroom_ratio",
+            "household_rooms"
+        ]
+    },
+    "training": {
+        "trained_at": "2026-07-03 11:52",
+        "python_version": "3.14",
+        "scikit_learn": "1.7"
+    }
+}
