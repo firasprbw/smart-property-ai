@@ -116,7 +116,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            href="https://github.com/"
+            href="https://github.com/firasprbw/smart-property-ai-model"
             target="_blank"
             className="
               flex
