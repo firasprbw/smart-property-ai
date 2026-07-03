@@ -3,6 +3,7 @@ from schemas import HouseFeatures
 from schemas import PredictionResponse
 from services.preprocessing import prepare_features
 from services.predictor import predict_price
+from fastapi.middleware.cors import CORSMiddleware
 
 import joblib
 import json
@@ -18,6 +19,15 @@ app = FastAPI(
     version="1.0.0"
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def home():
