@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* KIRI: Tempat untuk Logo */}
           <div className="flex justify-start">
             <Link href="/" className="font-semibold text-muted-foreground hover:text-foreground">
-              [Logo]
+              🏠🧠
             </Link>
           </div>
 
@@ -49,6 +49,11 @@ export default function Navbar() {
                 font-bold
                 whitespace-nowrap
                 tracking-wide
+                bg-gradient-to-r
+              from-blue-600
+              to-cyan-500
+              bg-clip-text
+              text-transparent
               "
             >
               Smart Property AI
@@ -57,8 +62,8 @@ export default function Navbar() {
 
           {/* KANAN: Menu About */}
           <div className="flex justify-end">
-            <Link href="/about" className="font-semibold text-muted-foreground hover:text-foreground">
-              About
+            <Link href="/" className="font-semibold text-muted-foreground hover:text-blue-600 transition-colors">
+              Blog & About
             </Link>
           </div>
         </nav>

@@ -31,7 +31,11 @@ export default function PredictionResult({ prediction }: PredictionResultProps) 
 
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold tracking-tight text-foreground/90">
+        <h3 className="text-lg font-semibold tracking-tight bg-gradient-to-r
+              from-blue-600
+              to-cyan-500
+              bg-clip-text
+              text-transparent">
           Prediction Result
         </h3>
         

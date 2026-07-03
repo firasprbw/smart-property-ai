@@ -81,7 +81,11 @@ export default function PredictionForm({
     >
       {/* Form Header / Optional Section Title */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold tracking-tight">Property Features</h2>
+        <h2 className="text-xl font-semibold tracking-tight bg-gradient-to-r
+              from-blue-600
+              to-cyan-500
+              bg-clip-text
+              text-transparent">Property Features</h2>
         <p className="text-sm text-muted-foreground">Input the property details below to predict the median price.</p>
       </div>
 
@@ -218,8 +222,8 @@ export default function PredictionForm({
           text-base 
           font-semibold 
           shadow-lg 
-          bg-primary 
-          hover:bg-primary/90 
+          bg-blue-600
+          hover:bg-blue-700
           transition-all
         "
         disabled={loading}
